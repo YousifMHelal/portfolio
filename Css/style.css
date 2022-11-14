@@ -94,7 +94,7 @@ main{
 }
 
 main .header{
-    min-height: 70px;
+    min-height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -263,7 +263,6 @@ hr{
 
 .projects{
     background: linear-gradient(to bottom, var(--dark-bg) , #262626);
-    /* min-height: 90vh; */
 }
 
 .projects .container{
@@ -634,9 +633,9 @@ footer .mail a:hover{
     }
 
     footer .mail a{
-        padding-top: 5rem;
+        margin-top: 5rem;
         font-size: 25px;
-            text-align: center;
+        text-align: center;
     }
 
     .footer p{
@@ -781,9 +780,9 @@ footer .mail a:hover{
     }
 
     footer .mail a{
-        padding-top: 5rem;
+        margin-top: 5rem;
         font-size: 25px;
-            text-align: center;
+        text-align: center;
     }
 
     .footer p{
