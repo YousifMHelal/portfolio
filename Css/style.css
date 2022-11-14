@@ -94,7 +94,7 @@ main{
 }
 
 main .header{
-    min-height: 80px;
+    min-height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
