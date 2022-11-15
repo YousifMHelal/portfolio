@@ -271,60 +271,90 @@ hr{
 
 .projects .contant{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 3rem;
+}
+
+.projects .project{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    background: #323232;
+    padding: 1rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .projects .info{
-    width: 40%;
-    margin-top: 10.5rem;
+    width: 100%;
+    height: 45%;
+    margin-top: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .info p{
+    text-align: center;
+}
+
+.projects .info button{
+    margin: -10px 0 15px;
 }
 
 .projects .images{
-    width: 50%;
-    margin-left: 10%;
-    padding-top: 3rem;
     position: relative;
+    width: 100%;
+    height: 45%;
+    padding-top: 1rem;
+    margin-bottom: 6.5rem;
 }
 
-.projects .images .imge1{
-    height: 22.9rem;
-    width: 40rem;
+.projects .images .mac-img{
+    height: 9.1rem;
+    width: 16rem;
     position: absolute;
     overflow: hidden;
     right: 2rem;
 }
 
-.projects .images .imge1 .mac{
+.projects .images .mac-img .mac{
     width: 100%;
     position: absolute;
 }
 
-.projects .images .imge1 .site{
-    width: 503px;
+.projects .images .mac-img .site{
+    width: 202px;
     position: absolute;
-    left: 68px;
-    top: 1rem;
+    left: 27px;
+    top: 6px;
 }
 
-.projects .images .imge2{
-    height: 322px;
-    width: 10.5rem;
+.projects .images .iphone-img{
+    height: 120px;
+    width: 4rem;
     position: absolute;
     overflow: hidden;
-    right: 0;
-    top: 8rem;
+    right: 15px;
+    top: 4rem;
 }
 
-.projects .images .imge2 .iphone{
+.projects .images .iphone-img .iphone{
     width: 100%;
     position: absolute;
-    box-shadow: -3px 2px 27px -6px rgba(0,0,0,0.75);
 }
 
-.projects .images .imge2 .site{
-    width: 141px;
+.projects .images .iphone-img .site{
+    width: 55px;
     position: absolute;
-    left: 13px;
-    top: 12px;
+    left: 4px;
+    top: 4px;
 }
 
 .projects p{
@@ -531,66 +561,18 @@ footer .mail a:hover{
     }
 
     .projects .contant{
-        flex-direction: column-reverse;
+        flex-direction: column;
+        margin: 3rem 0;
     }
 
     .projects .info{
-        width: 100%;
         margin: 0;
-        padding-top: 13rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding-top: 9rem;
     }
 
     .projects .images{
-        padding: 1rem 1.5rem;
-        width: 100%;
-        position: relative;
+        padding: 1rem 0;
         margin: 0;
-    }
-    
-    .projects .images .imge1{
-        height: 11.3rem;
-        width: 20rem;
-        position: absolute;
-        overflow: hidden;
-        right: 2rem;
-    }
-    
-    .projects .images .imge1 .mac{
-        width: 100%;
-        position: absolute;
-    }
-    
-    .projects .images .imge1 .site{
-        width: 253px;
-        position: absolute;
-        left: 33px;
-        top: 6px;
-    }
-    
-    .projects .images .imge2{
-        height: 184px;
-        width: 6rem;
-        position: absolute;
-        overflow: hidden;
-        right: 0;
-        top: 3rem;
-        }
-    
-    .projects .images .imge2 .iphone{
-        width: 100%;
-        position: absolute;
-        box-shadow: -3px 2px 27px -6px rgba(0,0,0,0.75);
-    }
-    
-    .projects .images .imge2 .site{
-        width: 81px;
-        position: absolute;
-        left: 8px;
-        top: 7px;
     }
 
     .skills .container{
@@ -644,7 +626,7 @@ footer .mail a:hover{
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:767px) and (max-width:1023px) {
     .container{
         max-width: 1023px;
     }
@@ -678,66 +660,7 @@ footer .mail a:hover{
     }
 
     .projects .contant{
-        flex-direction: column-reverse;
-    }
-
-    .projects .info{
-        width: 100%;
-        margin: 0;
-        padding-top: 13rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .projects .images{
-        padding: 1rem 1.5rem;
-        width: 100%;
-        position: relative;
-        margin: 0;
-    }
-    
-    .projects .images .imge1{
-        height: 11.3rem;
-        width: 20rem;
-        position: absolute;
-        overflow: hidden;
-        right: 2rem;
-    }
-    
-    .projects .images .imge1 .mac{
-        width: 100%;
-        position: absolute;
-    }
-    
-    .projects .images .imge1 .site{
-        width: 253px;
-        position: absolute;
-        left: 33px;
-        top: 6px;
-    }
-    
-    .projects .images .imge2{
-        height: 184px;
-        width: 6rem;
-        position: absolute;
-        overflow: hidden;
-        right: 0;
-        top: 3rem;
-        }
-    
-    .projects .images .imge2 .iphone{
-        width: 100%;
-        position: absolute;
-        box-shadow: -3px 2px 27px -6px rgba(0,0,0,0.75);
-    }
-    
-    .projects .images .imge2 .site{
-        width: 81px;
-        position: absolute;
-        left: 8px;
-        top: 7px;
+        margin: 3rem 0;
     }
 
     .skills .container{
@@ -791,7 +714,7 @@ footer .mail a:hover{
     }
 }
 
-@media screen and (min-width:1024px) and (max-width:1280px) {
+@media screen and (min-width:1023px) and (max-width:1280px) {
     .container{
         max-width: 1170px;
     }
@@ -818,45 +741,8 @@ footer .mail a:hover{
         padding: 0 1.5rem;
     }
 
-    .projects .info{
-        margin: 4rem 0;
-        width: 65%;
-    }
-
-    .projects .images{
-        padding: -8rem 1.5rem;
-        width: 50%;
-        position: relative;
-    }
-    
-    .projects .images .imge1{
-        height: 14.3rem;
-        width: 25rem;
-        position: absolute;
-        overflow: hidden;
-        right: 2rem;
-    }
-
-    .projects .images .imge1 .site{
-        width: 316px;
-        position: absolute;
-        left: 42px;
-        top: 6px;
-    }
-    
-    .projects .images .imge2{
-        height: 214px;
-        width: 7rem;
-        position: absolute;
-        overflow: hidden;
-        right: -1px;
-        top: 8rem;   
-    }
-    .projects .images .imge2 .site{
-        width: 94px;
-        position: absolute;
-        left: 9px;
-        top: 9px;
+    .projects .contant{
+        padding: 3rem 0;
     }
 
     .skills .container{
