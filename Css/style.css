@@ -5,11 +5,11 @@
 
 
 :root{
-    --main-col: #ab003c;
-    --alt-col: #f50057;
-    --h-col: #E0E0E0;
+    --main-col: #F64A24;
+    --alt-col: #f64a244d;
+    --h-col: #FFE8D1;
     --p-col:#ffffff99;
-    --dark-bg: #121212;
+    --dark-bg: #1E252E;
     --dark-nav:rgba(255, 255, 255, 0.07);
     --light-nav: hsla(0,0%,100%,.9);
     --light-nav: #FFFF; 
@@ -44,7 +44,7 @@ body{
 button{
     padding: 1rem 4rem;
     background-color: var(--main-col);
-    color: var(--h-col);
+    color: #fff;
     outline: none;
     border: none;
     font-size: var(--p-font);
@@ -56,10 +56,16 @@ button{
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
 }
 
 button:hover{
-    background: var(--alt-col);
+    background: #fff;
+    color: var(--main-col);
     }
 
 .heading{
@@ -104,6 +110,10 @@ main .header{
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 4%), 0 -1px 0 0 rgb(0 0 0 / 8%);
     transition: opacity .3s ease-in-out;
     z-index: 99999;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
 }
 
 /* -----Nav bar----- */
@@ -154,7 +164,7 @@ main .home{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 70px);
+    /* height: calc(100vh - 70px); */
 }
 
 .home .info{
@@ -169,6 +179,7 @@ main .home{
 
 .home .info h1{
     color: var(--h-col);
+    
     font-size: var(--h1-font);
     line-height: 1.75rem;
     font-family: 'Source Sans Pro', sans-serif;
@@ -262,11 +273,11 @@ hr{
 /* -----projects----- */
 
 .projects{
-    background: linear-gradient(to bottom, var(--dark-bg) , #262626);
+    background: linear-gradient(to bottom, var(--dark-bg) , #202531);
 }
 
 .projects .container{
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 
 .projects .contant{
@@ -368,7 +379,7 @@ hr{
 /* -----Skills----- */
 
 .skills{
-    padding: 3rem 1rem  10rem;
+    padding: 5rem 1rem  10rem;
 }
 
 .skills ul{
@@ -423,7 +434,7 @@ hr{
 /* -----Footer----- */
 
 footer{
-    background: linear-gradient(to bottom, var(--dark-bg) , #262626);
+    background: linear-gradient(to bottom, var(--dark-bg) , #202531);
 }
 
 footer .contact{
@@ -517,6 +528,39 @@ footer .mail a:hover{
     -o-transition: .4s;
 }
 
+#menu.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+    -webkit-transform: translate(0px, -2px) rotate(45deg);
+    -moz-transform: translate(0px, -2px) rotate(45deg);
+    -ms-transform: translate(0px, -2px) rotate(45deg);
+    -o-transform: translate(0px, -2px) rotate(45deg);
+}
+
+#menu.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -o-transform: translateX(15px);
+}
+
+#menu.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+    -webkit-transform: translate(-3px, 3px) rotate(-45deg);
+    -moz-transform: translate(-3px, 3px) rotate(-45deg);
+    -ms-transform: translate(-3px, 3px) rotate(-45deg);
+    -o-transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+/* -----Js style----- */
+
+.active{
+    color: var(--main-col);
+    text-decoration: underline;
+    text-underline-offset: 0.5em
+}
+
 /* -----Media queries----- */
 
 @media screen and (max-width:767px) {
@@ -526,6 +570,27 @@ footer .mail a:hover{
 
     .header ul{
         display: none;
+        position: fixed;
+        top: 68px;
+        right: 0;
+        width: 100vw;
+        height: 60vh;
+        background: #191919;
+        z-index: 100;
+    }
+
+    .header ul.is-active{
+        display: block;
+    }
+
+    .header ul a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        color: var(--p-col);
+        font-weight: 700;
+        margin-top: 1rem;
     }
 
     .header #menu{
@@ -541,7 +606,7 @@ footer .mail a:hover{
     .home .info{
         width: 100%;
         text-align: center;
-        margin-top: 20rem;
+        margin-top: 15rem;
     }
     
 
@@ -557,7 +622,7 @@ footer .mail a:hover{
 
     .projects .container{
         width: 100%;
-        padding: 2rem 1.5rem;
+        padding: 5rem 1.5rem;
     }
 
     .projects .contant{
@@ -633,20 +698,20 @@ footer .mail a:hover{
 
     .home{
         width: 100%;
-        display: flex;
+        padding-top: 17rem;
         flex-direction: column;
     }
 
     .home .info{
         width: 100%;
         text-align: center;
-        margin-top: 20rem;
+        margin-top: 0rem;
     }
     
 
     .home .image img{
         width: 23rem;
-        margin-top: -5rem;
+        /* margin-top: -5rem; */
     }
 
     .about .container{
@@ -656,7 +721,7 @@ footer .mail a:hover{
 
     .projects .container{
         width: 100%;
-        padding: 2rem 1.5rem;
+        padding: 5rem 1.5rem;
     }
 
     .projects .contant{
@@ -738,7 +803,6 @@ footer .mail a:hover{
 
     .projects .container{
         width: 100%;
-        padding: 0 1.5rem;
     }
 
     .projects .contant{
