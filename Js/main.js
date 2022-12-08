@@ -1,7 +1,7 @@
 
 // -----Styeling the active page-----
 
-let links = document.querySelectorAll('.header ul li a');
+let links = document.querySelectorAll('.header a');
 
 let menu = document.getElementById('menu');
 let nav = document.getElementById('nav');
