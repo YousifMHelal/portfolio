@@ -164,7 +164,6 @@ main .home{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: calc(100vh - 70px); */
 }
 
 .home .info{
@@ -179,11 +178,9 @@ main .home{
 
 .home .info h1{
     color: var(--h-col);
-    
     font-size: var(--h1-font);
     line-height: 1.75rem;
     font-family: 'Source Sans Pro', sans-serif;
-    font-style: italic;
     margin: 1.3rem 0;
 }
 
