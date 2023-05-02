@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,900;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,900;1,900&family=Stalemate&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
 
 
 :root{
-    --main-col: #F64A24;
-    --alt-col: #f64a244d;
-    --h-col: #FFE8D1;
+    --main-col: #FFD700;
+    --alt-col: #053F5E;
+    --h-col: #EEEEEE;
     --p-col:#ffffff99;
-    --dark-bg: #1E252E;
+    --dark-bg: #022C43;
     --dark-nav:rgba(255, 255, 255, 0.07);
-    --light-nav: hsla(0,0%,100%,.9);
-    --light-nav: #FFFF; 
     --p-font:1.2rem;
     --h1-font:3rem;
 }
@@ -31,6 +29,8 @@ html{
 body{
     font-family: 'Josefin Sans', sans-serif;
     background-color: var(--dark-bg);
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .container{
@@ -64,7 +64,7 @@ button{
 }
 
 button:hover{
-    background: #fff;
+    background: var(--h-col);
     color: var(--main-col);
     }
 
@@ -119,10 +119,10 @@ main .header{
 /* -----Nav bar----- */
 
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
 }
 
 
@@ -273,7 +273,7 @@ hr{
 /* -----projects----- */
 
 .projects{
-    background: linear-gradient(to bottom, var(--dark-bg) , #202531);
+    background: linear-gradient(to bottom, var(--dark-bg) , #115173);
 }
 
 .projects .container{
@@ -293,87 +293,19 @@ hr{
     display: flex;
     flex-direction: column;
     width: 20rem;
-    background: #323232;
-    padding: 1rem;
+    height: 240px;
+    background: #053F5E;
     border-radius: 20px;
+    overflow: hidden;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
 
-.projects .info{
+.projects .project img{
     width: 100%;
-    height: 45%;
-    margin-top: 18%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.projects .info p{
-    text-align: center;
-}
-
-.projects .info button{
-    margin: -10px 0 15px;
-}
-
-.projects .images{
-    position: relative;
-    width: 100%;
-    height: 45%;
-    padding-top: 1rem;
-    margin-bottom: 6.5rem;
-}
-
-.projects .images .mac-img{
-    height: 9.1rem;
-    width: 16rem;
-    position: absolute;
-    overflow: hidden;
-    right: 2rem;
-}
-
-.projects .images .mac-img .mac{
-    width: 100%;
-    position: absolute;
-}
-
-.projects .images .mac-img .site{
-    width: 202px;
-    position: absolute;
-    left: 27px;
-    top: 6px;
-}
-
-.projects .images .iphone-img{
-    height: 120px;
-    width: 4rem;
-    position: absolute;
-    overflow: hidden;
-    right: 15px;
-    top: 4rem;
-}
-
-.projects .images .iphone-img .iphone{
-    width: 100%;
-    position: absolute;
-}
-
-.projects .images .iphone-img .site{
-    width: 55px;
-    position: absolute;
-    left: 4px;
-    top: 4px;
-}
-
-.projects p{
-    font-size: var(--p-font);
-    color: var(--p-col);
-    margin: .5rem;
-    padding: 1rem  0;
-    line-height: 1.7rem;
+    height: 100%;
 }
 
 /* -----Skills----- */
@@ -434,7 +366,7 @@ hr{
 /* -----Footer----- */
 
 footer{
-    background: linear-gradient(to bottom, var(--dark-bg) , #202531);
+    background: linear-gradient(to bottom, var(--dark-bg) , #115173);
 }
 
 footer .contact{
@@ -630,15 +562,6 @@ footer .mail a:hover{
         margin: 3rem 0;
     }
 
-    .projects .info{
-        margin: 0;
-        padding-top: 9rem;
-    }
-
-    .projects .images{
-        padding: 1rem 0;
-        margin: 0;
-    }
 
     .skills .container{
         width: 100%;
